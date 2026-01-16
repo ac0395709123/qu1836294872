@@ -1,0 +1,234 @@
+{
+  "description": "Benchmark circuits for quantum circuit optimizer comparison.",
+  "circuits": [
+    {
+      "name": "qft_8",
+      "file": "qasm/qft_8.qasm",
+      "description": "QFT without swaps on 8 qubits (AI transpiler baseline).",
+      "tags": [
+        "qft",
+        "algorithmic"
+      ],
+      "num_qubits": 8,
+      "metrics": {
+        "depth": 15,
+        "two_qubit_gates": 28,
+        "two_qubit_depth": 13,
+        "total_gates": 36
+      }
+    },
+    {
+      "name": "efficient_su2_12",
+      "file": "qasm/efficient_su2_12.qasm",
+      "description": "EfficientSU2 (full entanglement, 1 rep) on 12 qubits.",
+      "tags": [
+        "efficient_su2",
+        "algorithmic"
+      ],
+      "num_qubits": 12,
+      "metrics": {
+        "depth": 25,
+        "two_qubit_gates": 66,
+        "two_qubit_depth": 21,
+        "total_gates": 114
+      }
+    },
+    {
+      "name": "efficient_su2_8",
+      "file": "qasm/efficient_su2_8.qasm",
+      "description": "EfficientSU2 (full entanglement, 2 reps) on 8 qubits.",
+      "tags": [
+        "efficient_su2",
+        "qiskit_library"
+      ],
+      "num_qubits": 8,
+      "metrics": {
+        "depth": 27,
+        "two_qubit_gates": 56,
+        "two_qubit_depth": 21,
+        "total_gates": 104
+      }
+    },
+    {
+      "name": "efficient_su2_16",
+      "file": "qasm/efficient_su2_16.qasm",
+      "description": "EfficientSU2 (full entanglement, 1 rep) on 16 qubits.",
+      "tags": [
+        "efficient_su2",
+        "qiskit_library"
+      ],
+      "num_qubits": 16,
+      "metrics": {
+        "depth": 33,
+        "two_qubit_gates": 120,
+        "two_qubit_depth": 29,
+        "total_gates": 184
+      }
+    },
+    {
+      "name": "real_amplitudes_8",
+      "file": "qasm/real_amplitudes_8.qasm",
+      "description": "RealAmplitudes ansatz (3 reps) on 8 qubits.",
+      "tags": [
+        "real_amplitudes",
+        "qiskit_library"
+      ],
+      "num_qubits": 8,
+      "metrics": {
+        "depth": 15,
+        "two_qubit_gates": 21,
+        "two_qubit_depth": 11,
+        "total_gates": 53
+      }
+    },
+    {
+      "name": "real_amplitudes_12",
+      "file": "qasm/real_amplitudes_12.qasm",
+      "description": "RealAmplitudes ansatz (2 reps) on 12 qubits.",
+      "tags": [
+        "real_amplitudes",
+        "qiskit_library"
+      ],
+      "num_qubits": 12,
+      "metrics": {
+        "depth": 16,
+        "two_qubit_gates": 22,
+        "two_qubit_depth": 13,
+        "total_gates": 58
+      }
+    },
+    {
+      "name": "real_amplitudes_8_r2",
+      "description": "Real Amplitudes ansatz on 8 qubits with 2 repetitions",
+      "tags": [
+        "real_amplitudes",
+        "variational",
+        "vqe"
+      ],
+      "num_qubits": 8,
+      "metrics": {
+        "depth": 12,
+        "two_qubit_gates": 14,
+        "two_qubit_depth": 9,
+        "total_gates": 38
+      },
+      "file": "qasm/real_amplitudes_8_r2.qasm"
+    },
+    {
+      "name": "real_amplitudes_12_r3",
+      "description": "Real Amplitudes ansatz on 12 qubits with 3 repetitions",
+      "tags": [
+        "real_amplitudes",
+        "variational",
+        "vqe"
+      ],
+      "num_qubits": 12,
+      "metrics": {
+        "depth": 19,
+        "two_qubit_gates": 33,
+        "two_qubit_depth": 15,
+        "total_gates": 81
+      },
+      "file": "qasm/real_amplitudes_12_r3.qasm"
+    },
+    {
+      "name": "real_amplitudes_16_r2",
+      "description": "Real Amplitudes ansatz on 16 qubits with 2 repetitions",
+      "tags": [
+        "real_amplitudes",
+        "variational",
+        "vqe"
+      ],
+      "num_qubits": 16,
+      "metrics": {
+        "depth": 20,
+        "two_qubit_gates": 30,
+        "two_qubit_depth": 17,
+        "total_gates": 78
+      },
+      "file": "qasm/real_amplitudes_16_r2.qasm"
+    },
+    {
+      "name": "efficient_su2_10_r2",
+      "description": "Efficient Su2 ansatz on 10 qubits with 2 repetitions",
+      "tags": [
+        "efficient_su2",
+        "variational",
+        "vqe"
+      ],
+      "num_qubits": 10,
+      "metrics": {
+        "depth": 17,
+        "two_qubit_gates": 18,
+        "two_qubit_depth": 11,
+        "total_gates": 78
+      },
+      "file": "qasm/efficient_su2_10_r2.qasm"
+    },
+    {
+      "name": "efficient_su2_12_r2",
+      "description": "Efficient Su2 ansatz on 12 qubits with 2 repetitions",
+      "tags": [
+        "efficient_su2",
+        "variational",
+        "vqe"
+      ],
+      "num_qubits": 12,
+      "metrics": {
+        "depth": 19,
+        "two_qubit_gates": 22,
+        "two_qubit_depth": 13,
+        "total_gates": 94
+      },
+      "file": "qasm/efficient_su2_12_r2.qasm"
+    },
+    {
+      "name": "qft_10",
+      "description": "Quantum Fourier Transform on 10 qubits",
+      "tags": [
+        "qft",
+        "algorithmic"
+      ],
+      "num_qubits": 10,
+      "metrics": {
+        "depth": 74,
+        "two_qubit_gates": 105,
+        "two_qubit_depth": 37,
+        "total_gates": 250
+      },
+      "file": "qasm/qft_10.qasm"
+    },
+    {
+      "name": "qft_12",
+      "description": "Quantum Fourier Transform on 12 qubits",
+      "tags": [
+        "qft",
+        "algorithmic"
+      ],
+      "num_qubits": 12,
+      "metrics": {
+        "depth": 90,
+        "two_qubit_gates": 150,
+        "two_qubit_depth": 45,
+        "total_gates": 360
+      },
+      "file": "qasm/qft_12.qasm"
+    },
+    {
+      "name": "qft_16",
+      "description": "Quantum Fourier Transform on 16 qubits",
+      "tags": [
+        "qft",
+        "algorithmic"
+      ],
+      "num_qubits": 16,
+      "metrics": {
+        "depth": 122,
+        "two_qubit_gates": 264,
+        "two_qubit_depth": 61,
+        "total_gates": 640
+      },
+      "file": "qasm/qft_16.qasm"
+    }
+  ]
+}

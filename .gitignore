@@ -1,0 +1,28 @@
+# VSCode
+.vscode/
+
+# DS Store
+.DS_Store
+
+# Environment variables
+.env
+
+# Maven build artifacts (GUOQ)
+guoq/target/
+
+# Benchmark reports
+reports/
+
+# Coverage reports
+.coverage
+
+# GUOQ build artifacts
+guoq/target/
+out.json
+
+# pycache
+**/__pycache__/**
+
+# Virtual environments
+.venv/
+.venv-tket/
